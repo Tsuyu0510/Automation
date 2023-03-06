@@ -45,11 +45,11 @@ sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://172.17.11.76:3306/EC --username root --password Tdc202106 --table  RF_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/RF_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table  RF_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/RF_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://172.17.11.76:3306/EC --username root --password Tdc202106 --table  YT_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/YT_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table  YT_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/YT_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
 
 
 #####END########
