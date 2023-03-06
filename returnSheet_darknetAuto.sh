@@ -43,4 +43,4 @@ do
 done 
 
 cd /home/learning03/detect_name_parser/sheetDetect_finish
-mv *.txt /home/learning03/detect_name_parser/darknetAuto_finish_2 ## Second model txt result route 
+mv *.txt /home/learning03/detect_name_parser/darknetAuto_finish_2 ## Second model txt result route
