@@ -33,23 +33,23 @@ sqoop job --exec 20230216_YT_EC_ORDERWORK_ITEM_job ## YTDB sqoop job boxname
 
 
 
-sqoop export --connect jdbc:mysql://ip:port/db02 --username root --password Tdc202106 --table o2o_table_likerealtime_2 --export-dir '/user/hadoop/oracle_test/test202211_7/*' --update-key PARENTID,ESHOPID,PER_TRNO,MANAGECODE --update-mode allowinsert  
+sqoop export --connect jdbc:mysql://ip:port/db02 --username ＊＊＊＊ --password ＊＊＊＊ --table o2o_table_likerealtime_2 --export-dir '/user/hadoop/oracle_test/test202211_7/*' --update-key PARENTID,ESHOPID,PER_TRNO,MANAGECODE --update-mode allowinsert  
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table RF_volume --export-dir '/user/hadoop/sqlserver_test/20230209_3/*' --update-key DISTR_NO,LINE_NO,DCMS_BATCH_ID,PER_TRNO --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username ＊＊＊＊ --password ＊＊＊＊ --table RF_volume --export-dir '/user/hadoop/sqlserver_test/20230209_3/*' --update-key DISTR_NO,LINE_NO,DCMS_BATCH_ID,PER_TRNO --update-mode allowinsert
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table YT_volume --export-dir '/user/hadoop/sqlserver_test/20230215_YT/*' --update-key DISTR_NO,LINE_NO,DCMS_BATCH_ID,PER_TRNO --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username ＊＊＊＊ --password ＊＊＊＊ --table YT_volume --export-dir '/user/hadoop/sqlserver_test/20230215_YT/*' --update-key DISTR_NO,LINE_NO,DCMS_BATCH_ID,PER_TRNO --update-mode allowinsert
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table  RF_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/RF_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username ＊＊＊＊ --password ＊＊＊＊ --table  RF_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/RF_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
 
 sleep 1m
 
-sqoop export --connect jdbc:mysql://ip:port/EC --username root --password Tdc202106 --table  YT_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/YT_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
+sqoop export --connect jdbc:mysql://ip:port/EC --username ＊＊＊＊ --password Tdc202106 --＊＊＊＊  YT_EC_ORDERWORK_ITEM_TDC --export-dir '/user/hadoop/sqlserver_test/YT_20230216_EC_ORDERWORK_ITEM_TDC/*' --update-key PER_TRNO,MANAGECODE --update-mode allowinsert
 
 
 #####END########
